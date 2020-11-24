@@ -36,7 +36,7 @@ class TwitterLogin(unittest.TestCase):
         driver.find_element_by_xpath("//*[@id='page-container']/div/div[1]/form/fieldset/div[1]/input").send_keys("*")#insert twitter username in "*"
     #Insert password
         wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='page-container']/div/div[1]/form/fieldset/div[2]/input")))
-        driver.find_element_by_xpath("//*[@id='page-container']/div/div[1]/form/fieldset/div[2]/input").send_keys("*") #insert password in "*"
+        driver.find_element_by_xpath("//*[@id='page-container']/div/div[1]/form/fieldset/div[2]/input").send_keys("*") #insert password instead "*"
     #Click on log In button
         wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='page-container']/div/div[1]/form/div[2]/button")))
         driver.find_element_by_xpath("//*[@id='page-container']/div/div[1]/form/div[2]/button").click()
